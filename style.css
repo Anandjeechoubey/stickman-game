@@ -7,11 +7,47 @@ html,body{
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
+    background: linear-gradient(#81d4fa, #b2ebf2);
+    font-weight: bold;
+}
+
+input {
+    background: none;
+    border: none;
+    border-bottom: 3px dotted black;
+    font-weight: bold;
+    font-size: large;
+}
+input:focus {
+    outline: none;
+}
+
+button {
+    background: none;
+    border: 3px solid black;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    scale: 1.1;
+}
+
+#input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 24px;
 }
 
 
 .container{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -29,9 +65,47 @@ body{
     font-size: 2em;
     font-weight: 900;
 }
+#highscore{
+    border: 3px solid #212121;
+    color: #212121;
+    /* width: 100px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    position: absolute;
+    top: 30px;
+    right: 150px;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+#name{
+    border: 3px solid #212121;
+    color: #212121;
+    /* width: 100px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 2em;
+    font-weight: 900;
+}
 
 #introduction{
     width: 200px;
+    height: 150px;
+    position: absolute;
+    font-weight: 600;
+    font-size: 0.8em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    transition: opacity 2s;
+}
+
+#input-name{
+    /* width: 200px; */
     height: 150px;
     position: absolute;
     font-weight: 600;

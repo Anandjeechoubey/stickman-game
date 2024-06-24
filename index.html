@@ -8,10 +8,18 @@
 </head>
 <body>
 
+    <div id="input-container">
+        Please enter you Name: 
+        <input type="text" id="form-name-field">
+        <button onclick="submitName()">Submit</button>
+    </div>
+
     <div class="container">
+        <div id="highscore">score : </div>
         <div id="score">score : </div>
+        <div id="name">Name : </div>
         <canvas id="game" width="375" height="375"></canvas>
-        <div id="introduction">Hold down the mouse to stretch out a stick</div>
+        <div id="introduction"></div>
         <div id="perfect">DOUBLE SCORE</div>
         <button id="restart">RESTART</button>
     </div>
